@@ -1233,18 +1233,18 @@ input[type='checkbox'] {
 	color: #f1f1f8;
 }
 
-
 /***************************/
 /*     12. Screenshots     */
 /***************************/
 .slider-2 {
-	padding-top: 6.875rem;
-	padding-bottom: 6.875rem;
+	padding-top: 5.875rem;
+	padding-bottom: 5.875rem;
 	background-color: #32936F;
 }
 
 .slider-2 .slider-container {
 	position: relative;
+	
 }
 
 .slider-2 .swiper-container {
