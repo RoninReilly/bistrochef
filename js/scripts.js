@@ -61,7 +61,10 @@
     
 
     /* Card Slider - Swiper */
-	var cardSlider = new Swiper('.card-slider', {
+// import Swiper styles
+
+    
+	const cardSlider = new Swiper('.card-slider', {
 		autoplay: {
             delay: 4000,
             disableOnInteraction: false
