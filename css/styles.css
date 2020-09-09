@@ -951,7 +951,7 @@ input[type='checkbox'] {
 
 .tabs #tab-1 img {
 	display: block;
-	margin: 2rem auto 3rem auto;
+	margin: 0 auto 2rem auto;
 }
 
 .tabs #tab-1 .card.right-pane .text-wrapper {
