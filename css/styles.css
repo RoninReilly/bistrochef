@@ -762,7 +762,7 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/bg.png') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/NewImages/bg.jpg') center center no-repeat;
 	/* backdrop-filter: blur(100px); */
 	background-size: cover;
 	background-attachment: fixed;
@@ -1008,7 +1008,7 @@ input[type='checkbox'] {
 .basic-1 {
 	padding-top: 6.375rem;
 	padding-bottom: 6.875rem;
-	background: url('../images/bg.png') center center no-repeat;
+	background: url('../images/NewImages/bg.jpg') center center no-repeat;
 	background-size: cover; 
 	background-attachment: fixed;
 	display: block;
@@ -1286,7 +1286,7 @@ input[type='checkbox'] {
 .basic-4 {
 	padding-top: 6.5rem;
 	padding-bottom: 6.75rem;
-	background: url('../images/bg.png') center center no-repeat;
+	background: url('../images/NewImages/bg.jpg') center center no-repeat;
 	background-size: cover; 
 	background-attachment: fixed;
 	display: block;
@@ -1349,7 +1349,7 @@ input[type='checkbox'] {
 .form {
 	padding-top: 6.25rem;
 	padding-bottom: 5.625rem;
-	background: url('../images/bg.png') center bottom no-repeat;
+	background: url('../images/NewImages/bg.jpg') center bottom no-repeat;
 	background-size: cover; 
 	background-attachment: fixed;
 	display: block;
