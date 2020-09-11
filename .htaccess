@@ -1,0 +1,40 @@
+Options All -Indexes
+
+DirectoryIndex index.php index.htm index.html
+
+RewriteEngine on
+RewriteBase /
+
+# Force HTTPS on the subdomains/subdirectories login or admin
+#RewriteCond %{HTTPS} off
+#RewriteCond %{HTTP_HOST} ^(login|admin)\. [NC]
+#RewriteCond %{REQUEST_URI} ^(login|admin)\. [NC,OR]
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Force WWW if no subdomain is given
+RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+Mod_expires
+        
+<ifModule mod_expires.c>
+
+ ExpiresActive On
+ #кэшировать флэш и изображения на одну неделю
+ ExpiresByType image/x-icon "access plus 7 days"
+ ExpiresByType image/jpeg "access plus 7 days"
+ ExpiresByType image/png "access plus 7 days"
+ ExpiresByType image/gif "access plus 7 days"
+ ExpiresByType application/x-shockwave-flash "access plus 7 days"
+ #кэшировать css, javascript и текстовые файлы на одну неделю
+ ExpiresByType text/css "access plus 7 days"
+ ExpiresByType text/javascript "access plus 7 days"
+ ExpiresByType application/javascript "access plus 7 days"
+ ExpiresByType application/x-javascript "access plus 7 days"
+ #кэшировать html и htm файлы на один день
+ ExpiresByType text/html "access plus 1 day"
+ #кэшировать xml файлы на десять минут
+ ExpiresByType application/xhtml+xml "access plus 10 minutes"
+</ifModule>
