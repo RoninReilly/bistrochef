@@ -765,7 +765,7 @@ input[type='checkbox'] {
 	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/NewImages/bg.jpg') center center no-repeat;
 	/* backdrop-filter: blur(100px); */
 	background-size: cover;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	display: block;
 }
 
@@ -1010,7 +1010,7 @@ input[type='checkbox'] {
 	padding-bottom: 6.875rem;
 	background: url('../images/NewImages/bg.jpg') center center no-repeat;
 	background-size: cover; 
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	display: block;
 }
 
@@ -1288,7 +1288,7 @@ input[type='checkbox'] {
 	padding-bottom: 6.75rem;
 	background: url('../images/NewImages/bg.jpg') center center no-repeat;
 	background-size: cover; 
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	display: block;
 }
 
@@ -1351,7 +1351,7 @@ input[type='checkbox'] {
 	padding-bottom: 5.625rem;
 	background: url('../images/NewImages/bg.jpg') center bottom no-repeat;
 	background-size: cover; 
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	display: block;
 }
 
