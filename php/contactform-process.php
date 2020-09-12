@@ -26,7 +26,7 @@ if (empty($_POST["terms"])) {
 }
 
 $EmailTo = "Bistroceff@mail.ru";
-$Subject = "Новое сообщение с сайта";
+$Subject = "БИСТРОШЕФ Новое сообщение";
 
 // prepare email body text
 $Body = "";

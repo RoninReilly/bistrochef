@@ -2,55 +2,56 @@
 $errorMSG = "";
 
 if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "Необходимо ввести имя ";
 } else {
     $name = $_POST["name"];
 }
 
 if (empty($_POST["email"])) {
-    $errorMSG = "Email is required ";
+    $errorMSG = "Необходимо ввести Email";
 } else {
     $email = $_POST["email"];
 }
 
-if (empty($_POST["select"])) {
-    $errorMSG = "Select is required ";
+if (empty($_POST["message"])) {
+    $errorMSG = "Необходимо ввести сообщение";
 } else {
-    $select = $_POST["select"];
+    $message = $_POST["message"];
 }
 
 if (empty($_POST["terms"])) {
-    $errorMSG = "Terms is required ";
+    $errorMSG = "Необходимо подтверждение";
 } else {
     $terms = $_POST["terms"];
 }
 
-$EmailTo = "yourname@domain.com";
-$Subject = "New privacy request from Leno landing page";
+$EmailTo = "Bistroceff@mail.ru";
+$Subject = "Ремонт и обсл. - заявка";
 
 // prepare email body text
 $Body = "";
-$Body .= "Name: ";
+$Body .= "Имя: ";
 $Body .= $name;
 $Body .= "\n";
-$Body .= "Email: ";
+$Body .= "Почта: ";
 $Body .= $email;
 $Body .= "\n";
-$Body .= "Request: ";
+$Body .= "Запрос: ";
 $Body .= $select;
 $Body .= "\n";
-$Body .= "Terms: ";
+$Body .= "Подтверждение: ";
 $Body .= $terms;
 $Body .= "\n";
 
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
+
 // redirect to success page
 if ($success && $errorMSG == ""){
-   echo "success";
+   echo "Успех";
 }else{
     if($errorMSG == ""){
-        echo "Something went wrong :(";
+        echo "Что-то пошло не так :(";
     } else {
         echo $errorMSG;
     }

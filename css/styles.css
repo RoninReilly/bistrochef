@@ -1474,14 +1474,14 @@ a:hover.back-to-top {
 .ex-header {
 	padding-top: 8rem;
 	padding-bottom: 5rem;
-	background: linear-gradient(to bottom right, #2c1a7e, #5557db);
+	background: linear-gradient(to bottom right, #212121, #212121);
 	text-align: center;
 }
 
 .ex-basic-1 {
 	padding-top: 2rem;
 	padding-bottom: 0.875rem;
-	background-color: #2f2c3d;
+	background-color: #32936F;
 }
 
 .ex-basic-1 .breadcrumbs {
@@ -1496,7 +1496,7 @@ a:hover.back-to-top {
 .ex-basic-2 {
 	padding-top: 4.75rem;
 	padding-bottom: 4rem;
-	background-color: #262431;
+	background-color: #212121;
 }
 
 .ex-basic-2 h3 {
@@ -1722,6 +1722,7 @@ a:hover.back-to-top {
 	/* Contact */
 	.form .list-unstyled li {
 		display: inline-block;
+		padding-bottom: 0.5rem;
 		margin-right: 0.5rem;
 		margin-left: 0.5rem;
 	}
